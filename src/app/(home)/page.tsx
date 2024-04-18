@@ -1,7 +1,7 @@
 import Banner from "./components/Banner";
 import BookList from "./components/BookList";
 export default async function Home() {
-  const response = await fetch(`${process.env.BACKEND_URL}api/books`, {
+  const response = await fetch(`${process.env.BACKEND_URL}books`, {
     cache: "no-store",
   });
   if (!response.ok) {
